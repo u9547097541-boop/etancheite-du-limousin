@@ -241,3 +241,32 @@
 @layer utilities {
   .text-balance { text-wrap: balance; }
 }
+
+/* ── Scroll reveal animations (pure CSS, no Framer Motion) ── */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.22, 0.61, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero entrance animations — CSS only */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroFadeRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.hero-anim-1 { animation: heroFadeUp 0.7s cubic-bezier(0.22,0.61,0.36,1) 0.1s both; }
+.hero-anim-2 { animation: heroFadeUp 0.7s cubic-bezier(0.22,0.61,0.36,1) 0.25s both; }
+.hero-anim-3 { animation: heroFadeUp 0.7s cubic-bezier(0.22,0.61,0.36,1) 0.4s both; }
+.hero-anim-4 { animation: heroFadeUp 0.7s cubic-bezier(0.22,0.61,0.36,1) 0.55s both; }
+.hero-anim-5 { animation: heroFadeUp 0.7s cubic-bezier(0.22,0.61,0.36,1) 0.7s both; }
+.hero-anim-right { animation: heroFadeRight 0.8s cubic-bezier(0.22,0.61,0.36,1) 0.35s both; }
