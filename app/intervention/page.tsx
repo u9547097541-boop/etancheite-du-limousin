@@ -133,7 +133,7 @@ export default function InterventionPage() {
         <div className="absolute inset-0">
           <Image
             src="/svg/intervention.svg"
-            alt="Intervention Les Cœurs de Madagascar"
+            alt="Intervention Étanchéité du Limousin"
             fill
             className="object-cover"
             priority

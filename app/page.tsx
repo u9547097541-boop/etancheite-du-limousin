@@ -409,7 +409,7 @@ export default function HomePage() {
                 <span className="text-[#b5a47a]">votre toiture</span>
               </h2>
               <p className="text-slate-500 leading-relaxed mb-4 text-[15px]">
-                Créée en 1998, <strong className="text-[#2d3e50]">Les Cœurs de Madagascar</strong> est une
+                Créée en 1998, <strong className="text-[#2d3e50]">Étanchéité du Limousin</strong> est une
                 entreprise spécialisée dans les travaux d&apos;étanchéité, de bardage et d&apos;isolation
                 pour les professionnels et les collectivités.
               </p>

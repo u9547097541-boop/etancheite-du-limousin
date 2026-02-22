@@ -17,8 +17,8 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <span className="text-[13px] font-extrabold text-white tracking-tight leading-none">Les Cœurs</span>
-                <span className="block text-[9px] text-[#b5a47a] font-bold uppercase tracking-[0.22em] mt-0.5">de Madagascar</span>
+                <span className="text-[13px] font-extrabold text-white tracking-tight leading-none">Étanchéité</span>
+                <span className="block text-[9px] text-[#b5a47a] font-bold uppercase tracking-[0.22em] mt-0.5">du Limousin</span>
               </div>
             </Link>
             <p className="text-sm text-white/45 leading-relaxed mb-4">
@@ -95,7 +95,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="mt-12 pt-6 border-t border-[#b5a47a]/15 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/25">© {new Date().getFullYear()} Les Cœurs de Madagascar — Tous droits réservés</p>
+          <p className="text-xs text-white/25">© {new Date().getFullYear()} Étanchéité du Limousin — Tous droits réservés</p>
           <div className="flex items-center gap-6 text-xs text-white/25">
             <Link href="/mentions-legales" className="hover:text-[#d4c9a8] transition-colors">Mentions légales</Link>
             <Link href="/politique-confidentialite" className="hover:text-[#d4c9a8] transition-colors">Politique de confidentialité</Link>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mentions Légales | Les Cœurs de Madagascar",
+  title: "Mentions Légales | Étanchéité du Limousin",
 };
 
 export default function MentionsLegales() {
@@ -15,7 +15,7 @@ export default function MentionsLegales() {
           <div className="card p-6 shadow-sm">
             <h2 className="text-lg font-bold text-slate-800 mb-3">Éditeur du site</h2>
             <p className="text-sm text-slate-500 leading-relaxed">
-              Les Cœurs de Madagascar<br />
+              Étanchéité du Limousin<br />
               6 allée des Gravelles<br />
               87000 Limoges<br />
               SIREN : 418415774<br />

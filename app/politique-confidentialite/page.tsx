@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité | Les Cœurs de Madagascar",
+  title: "Politique de Confidentialité | Étanchéité du Limousin",
 };
 
 export default function PolitiqueConfidentialite() {

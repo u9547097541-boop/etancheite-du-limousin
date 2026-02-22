@@ -95,7 +95,7 @@ export default function ContactForm() {
                   style={{ border: 0, borderRadius: "0.75rem" }}
                   allowFullScreen loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Localisation Les Cœurs de Madagascar"
+                  title="Localisation Étanchéité du Limousin"
                 />
               </div>
             </div>

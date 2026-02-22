@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Toiture Végétalisée à Limoges | Les Cœurs de Madagascar",
+  title: "Toiture Végétalisée à Limoges | Étanchéité du Limousin",
   description:
     "Toiture végétalisée à Limoges et Guéret. Réalisation de toits végétaux écologiques et isolants. Expertise depuis 1998. Départements 87, 19, 23 et 24.",
 };
@@ -11,19 +11,19 @@ export default function ToitureVegetalisee() {
   return (
     <ServicePage
       title="Toiture végétalisée à Limoges, des réalisations de grande qualité"
-      subtitle="Installée à Limoges, dans les environs de Guéret, l'entreprise Les Cœurs de Madagascar est experte en toiture végétalisée. Elle réalise tout type de toit végétal avec un grand professionnalisme."
+      subtitle="Installée à Limoges, dans les environs de Guéret, l'entreprise Étanchéité du Limousin est experte en toiture végétalisée. Elle réalise tout type de toit végétal avec un grand professionnalisme."
       heroImage="/svg/toiture-veg.svg"
       iconName="Leaf"
       sections={[
         {
           title: "Toiture végétalisée à Limoges, un système éprouvé",
           content: [
-            "Située à Limoges, non loin de Guéret, l'entreprise Les Cœurs de Madagascar est en mesure de prendre en charge toute toiture végétalisée. Depuis une vingtaine d'années, elle conduit les travaux de mise en œuvre de toit végétal, notamment pour les toitures-terrasses, dans les départements 87, 19, 23 et 24.",
+            "Située à Limoges, non loin de Guéret, l'entreprise Étanchéité du Limousin est en mesure de prendre en charge toute toiture végétalisée. Depuis une vingtaine d'années, elle conduit les travaux de mise en œuvre de toit végétal, notamment pour les toitures-terrasses, dans les départements 87, 19, 23 et 24.",
             "Lors de la réalisation de votre toiture végétalisée, nous commencerons par construire une pente afin de faciliter l'évacuation de l'eau. Nous exécuterons ensuite des travaux pour rendre votre toit étanche avant d'installer le support de culture qui permettra la plantation de la végétation de votre choix.",
             "Nous pouvons également mettre en place, si vous le souhaitez, des rouleaux précultivés similaires à des plaques de gazon. Quelques mois après notre intervention, vous disposerez d'un toit verdoyant tout en étant parfaitement étanche.",
           ],
           image: "/svg/toiture-veg.svg",
-          imageAlt: "Toiture végétalisée réalisée par Les Cœurs de Madagascar",
+          imageAlt: "Toiture végétalisée réalisée par Étanchéité du Limousin",
         },
         {
           title: "Optez pour un toit végétal à Guéret et dans la région",
@@ -36,7 +36,7 @@ export default function ToitureVegetalisee() {
         },
       ]}
       relatedServices={[
-        { name: "Les Cœurs de Madagascar", href: "/" },
+        { name: "Étanchéité du Limousin", href: "/" },
         { name: "Étanchéité liquide", href: "/etancheite-liquide" },
         { name: "Étanchéité bitume", href: "/etancheite-bitume" },
         { name: "Bardage et isolation", href: "/bardage-isolation" },

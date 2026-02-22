@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Bardage et Isolation à Limoges | Les Cœurs de Madagascar",
+  title: "Bardage et Isolation à Limoges | Étanchéité du Limousin",
   description:
     "Bardage et isolation de façade à Limoges et Guéret. Produits Monopanel, Bacacier, Rockwool, Knauf Therm. Depuis 1998. Départements 87, 19, 23 et 24.",
 };
@@ -11,14 +11,14 @@ export default function BardageIsolation() {
   return (
     <ServicePage
       title="Bardage à Limoges, une équipe spécialisée à votre service"
-      subtitle="Située à Limoges, dans le secteur de Guéret, l'entreprise Les Cœurs de Madagascar assure la réalisation de bardage. Elle prend également en charge tout chantier d'isolation de façade."
+      subtitle="Située à Limoges, dans le secteur de Guéret, l'entreprise Étanchéité du Limousin assure la réalisation de bardage. Elle prend également en charge tout chantier d'isolation de façade."
       heroImage="/svg/bardage.svg"
       iconName="Shield"
       sections={[
         {
           title: "Bardage à Limoges, un grand choix de revêtements extérieurs pour vos façades",
           content: [
-            "Installée à Limoges, près de Guéret, la société Les Cœurs de Madagascar est spécialisée en travaux de bardage. Créée en 1998, elle effectue aussi des travaux d'isolation de façade dans les départements 87, 19, 23 et 24.",
+            "Installée à Limoges, près de Guéret, la société Étanchéité du Limousin est spécialisée en travaux de bardage. Créée en 1998, elle effectue aussi des travaux d'isolation de façade dans les départements 87, 19, 23 et 24.",
             "Nous sommes en mesure de réaliser tout type de bardages. Nous utilisons notamment les produits Monopanel, une marque réputée proposant une large gamme de produits isolants, afin de réaliser des façades métal de qualité dans un grand choix de coloris. Nous travaillons aussi avec Bacacier, un fabricant qui offre un choix important de matériaux dans de nombreuses teintes.",
             "Rigoureux, nous procédons à la pose de ces vêtures extérieures avec professionnalisme sur vos façades, que vous résidiez à Limoges, Guéret ou dans les départements avoisinants.",
           ],
@@ -36,7 +36,7 @@ export default function BardageIsolation() {
         },
       ]}
       relatedServices={[
-        { name: "Les Cœurs de Madagascar", href: "/" },
+        { name: "Étanchéité du Limousin", href: "/" },
         { name: "Étanchéité liquide", href: "/etancheite-liquide" },
         { name: "Étanchéité bitume", href: "/etancheite-bitume" },
         { name: "Toiture végétalisée", href: "/toiture-vegetalisee" },

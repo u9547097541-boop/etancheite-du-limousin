@@ -57,8 +57,8 @@ export default function Header() {
               </svg>
             </div>
             <div>
-              <span className="text-[13px] font-extrabold text-white tracking-tight leading-none">Les Cœurs</span>
-              <span className="block text-[9.5px] text-[#b5a47a] font-bold uppercase tracking-[0.22em] mt-0.5">de Madagascar</span>
+              <span className="text-[13px] font-extrabold text-white tracking-tight leading-none">Étanchéité</span>
+              <span className="block text-[9.5px] text-[#b5a47a] font-bold uppercase tracking-[0.22em] mt-0.5">du Limousin</span>
             </div>
           </Link>
 

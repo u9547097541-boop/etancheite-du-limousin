@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Les Cœurs de Madagascar - Étanchéité, Toiture & Bardage à Limoges",
+  title: "Étanchéité du Limousin - Étanchéité, Toiture & Bardage à Limoges",
   description:
-    "Les Cœurs de Madagascar, spécialiste en étanchéité bitume, étanchéité liquide, toiture végétalisée et bardage isolation à Limoges, Guéret et départements 87, 19, 23, 24. Depuis 1998.",
+    "Étanchéité du Limousin, spécialiste en étanchéité bitume, étanchéité liquide, toiture végétalisée et bardage isolation à Limoges, Guéret et départements 87, 19, 23, 24. Depuis 1998.",
 };
 
 export default function RootLayout({

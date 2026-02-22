@@ -197,7 +197,7 @@ export default function ContratEntretienPage() {
                 massives, souvent décelées trop tard.
               </p>
               <p className="text-slate-500 leading-relaxed mb-8">
-                Avec un contrat d&apos;entretien <strong className="text-[#2d3e50]">Les Cœurs de Madagascar</strong>,
+                Avec un contrat d&apos;entretien <strong className="text-[#2d3e50]">Étanchéité du Limousin</strong>,
                 vous bénéficiez d&apos;un suivi professionnel régulier, d&apos;une détection précoce des anomalies
                 et d&apos;une traçabilité complète des interventions.
               </p>
