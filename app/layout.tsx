@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Étanchéité du Limousin - Étanchéité, Toiture & Bardage à Limoges",
@@ -16,12 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <head>
-      </head>
       <body className="antialiased bg-white">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
