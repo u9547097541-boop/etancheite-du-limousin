@@ -17,29 +17,11 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        {/* Netlify Identity Widget — required for Decap CMS login */}
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
       </head>
       <body className="antialiased bg-white">
         <Header />
         <main>{children}</main>
         <Footer />
-        {/* Redirect to /admin after Netlify Identity login */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (window.netlifyIdentity) {
-                window.netlifyIdentity.on("init", function(user) {
-                  if (!user) {
-                    window.netlifyIdentity.on("login", function() {
-                      document.location.href = "/admin/";
-                    });
-                  }
-                });
-              }
-            `,
-          }}
-        />
       </body>
     </html>
   );

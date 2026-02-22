@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: u9547097541-boop/etancheite-du-limousin
   branch: main
 
 # Where uploaded media files are stored
