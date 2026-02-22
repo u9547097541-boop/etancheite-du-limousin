@@ -1,0 +1,11 @@
+{
+  "hero_title": "Spécialiste en étanchéité à Limoges",
+  "hero_subtitle": "Étanchéité bitume & liquide, toiture végétalisée, bardage et isolation. Intervention professionnelle sur les départements 87, 19, 23 et 24.",
+  "cta_text": "Devis gratuit",
+  "stats": [
+    { "value": "25", "suffix": "+", "label": "Années d'expérience" },
+    { "value": "4", "suffix": "", "label": "Départements couverts" },
+    { "value": "500", "suffix": "+", "label": "Chantiers réalisés" },
+    { "value": "100", "suffix": "%", "label": "Clients satisfaits" }
+  ]
+}

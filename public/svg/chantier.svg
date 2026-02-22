@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2a38"/>
+      <stop offset="60%" stop-color="#2d3e50"/>
+      <stop offset="100%" stop-color="#3d5166"/>
+    </linearGradient>
+    <linearGradient id="roofSurf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3d50"/>
+      <stop offset="100%" stop-color="#1a2a38"/>
+    </linearGradient>
+    <radialGradient id="spotLight" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#b5a47a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#b5a47a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="540" fill="url(#bgGrad)"/>
+  <rect width="800" height="540" fill="url(#spotLight)"/>
+
+  <!-- Aerial/bird's eye view of rooftop construction site -->
+
+  <!-- Ground/Roof surface — main flat roof seen from above slightly tilted -->
+  <rect x="40" y="60" width="720" height="440" rx="6" fill="url(#roofSurf)" opacity="0.9"/>
+
+  <!-- Seam lines — membrane grid -->
+  <line x1="40" y1="180" x2="760" y2="180" stroke="#b5a47a" stroke-width="2" opacity="0.3"/>
+  <line x1="40" y1="300" x2="760" y2="300" stroke="#b5a47a" stroke-width="2" opacity="0.3"/>
+  <line x1="40" y1="420" x2="760" y2="420" stroke="#b5a47a" stroke-width="2" opacity="0.25"/>
+  <line x1="200" y1="60" x2="200" y2="500" stroke="#b5a47a" stroke-width="2" opacity="0.25"/>
+  <line x1="400" y1="60" x2="400" y2="500" stroke="#b5a47a" stroke-width="2" opacity="0.25"/>
+  <line x1="600" y1="60" x2="600" y2="500" stroke="#b5a47a" stroke-width="2" opacity="0.25"/>
+
+  <!-- Parapet border -->
+  <rect x="40" y="60" width="720" height="440" rx="6" fill="none" stroke="#b5a47a" stroke-width="8" opacity="0.5"/>
+  <rect x="44" y="64" width="712" height="432" rx="4" fill="none" stroke="#d4c9a8" stroke-width="2" opacity="0.3"/>
+
+  <!-- Bitumen membrane rolls — top-down view  -->
+  <!-- Rolls scattered around work area -->
+  <!-- Roll 1 -->
+  <g transform="translate(80, 200) rotate(-15)">
+    <ellipse cx="20" cy="0" rx="20" ry="12" fill="#1a2a38" opacity="0.9"/>
+    <rect x="0" y="-6" width="40" height="12" rx="0" fill="#243040" opacity="0.85"/>
+    <ellipse cx="20" cy="0" rx="20" ry="12" fill="none" stroke="#b5a47a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#b5a47a" stroke-width="1" opacity="0.3"/>
+  </g>
+  <!-- Roll 2 -->
+  <g transform="translate(140, 310) rotate(20)">
+    <ellipse cx="20" cy="0" rx="20" ry="12" fill="#1a2a38" opacity="0.9"/>
+    <rect x="0" y="-6" width="40" height="12" fill="#243040" opacity="0.85"/>
+    <ellipse cx="20" cy="0" rx="20" ry="12" fill="none" stroke="#b5a47a" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <!-- Roll 3 — open/unrolled strip -->
+  <rect x="240" y="350" width="200" height="28" rx="3" fill="#243040" opacity="0.85"/>
+  <line x1="240" y1="364" x2="440" y2="364" stroke="#b5a47a" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="440" cy="364" rx="16" ry="14" fill="#1a2a38" opacity="0.9"/>
+  <ellipse cx="440" cy="364" rx="16" ry="14" fill="none" stroke="#b5a47a" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Equipment — chalumeau torch on ground -->
+  <g transform="translate(560, 150)">
+    <!-- Gas cylinder -->
+    <ellipse cx="15" cy="0" rx="15" ry="8" fill="#b5a47a" opacity="0.8"/>
+    <rect x="0" y="-8" width="30" height="50" rx="6" fill="#b5a47a" opacity="0.75"/>
+    <ellipse cx="15" cy="42" rx="15" ry="8" fill="#8a7a5a" opacity="0.8"/>
+    <!-- Valve on top -->
+    <rect x="10" y="-16" width="10" height="10" rx="2" fill="#6a5a3a" opacity="0.9"/>
+    <!-- Hose -->
+    <path d="M 15 -16 Q 60 -30 100 0 Q 120 10 110 30" stroke="#2d3e50" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Torch nozzle -->
+    <rect x="92" y="18" width="30" height="12" rx="4" fill="#8a7a5a" opacity="0.9"/>
+    <!-- Flame (from active torch) -->
+    <ellipse cx="124" cy="22" rx="10" ry="16" fill="#f97316" opacity="0.7" filter="url(#glow)"/>
+    <ellipse cx="124" cy="24" rx="6" ry="10" fill="#fbbf24" opacity="0.8"/>
+    <ellipse cx="124" cy="26" rx="3" ry="6" fill="white" opacity="0.6"/>
+  </g>
+
+  <!-- Workers — top-down silhouettes -->
+  <!-- Worker 1 — crouching applying membrane -->
+  <g transform="translate(330, 230)">
+    <ellipse cx="18" cy="14" rx="18" ry="20" fill="#2d3e50" opacity="0.9"/>
+    <!-- Helmet top view -->
+    <circle cx="18" cy="8" r="13" fill="#b5a47a" opacity="0.85"/>
+    <circle cx="18" cy="8" r="9" fill="#2d3e50" opacity="0.5"/>
+    <!-- Arms -->
+    <ellipse cx="0" cy="20" rx="8" ry="5" fill="#2d3e50" opacity="0.8"/>
+    <ellipse cx="36" cy="20" rx="8" ry="5" fill="#2d3e50" opacity="0.8"/>
+  </g>
+
+  <!-- Worker 2 — standing, viewed from top -->
+  <g transform="translate(500, 300)">
+    <ellipse cx="14" cy="16" rx="14" ry="18" fill="#2d3e50" opacity="0.9"/>
+    <!-- Helmet top-down -->
+    <circle cx="14" cy="8" r="12" fill="#d4c9a8" opacity="0.85"/>
+    <circle cx="14" cy="8" r="8" fill="#2d3e50" opacity="0.5"/>
+    <!-- Arms outward -->
+    <ellipse cx="-4" cy="18" rx="7" ry="4" fill="#2d3e50" opacity="0.8"/>
+    <ellipse cx="32" cy="18" rx="7" ry="4" fill="#2d3e50" opacity="0.8"/>
+  </g>
+
+  <!-- Worker 3 — second person with roll -->
+  <g transform="translate(200, 420)">
+    <ellipse cx="16" cy="14" rx="16" ry="18" fill="#2d3e50" opacity="0.9"/>
+    <circle cx="16" cy="7" r="12" fill="#b5a47a" opacity="0.85"/>
+    <circle cx="16" cy="7" r="8" fill="#2d3e50" opacity="0.5"/>
+    <ellipse cx="-2" cy="16" rx="8" ry="4" fill="#2d3e50" opacity="0.8"/>
+    <ellipse cx="34" cy="16" rx="8" ry="4" fill="#2d3e50" opacity="0.8"/>
+    <!-- Roll they're carrying -->
+    <ellipse cx="46" cy="16" rx="12" ry="7" fill="#243040" opacity="0.8"/>
+    <ellipse cx="46" cy="16" rx="12" ry="7" fill="none" stroke="#b5a47a" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Drain outlet top-down -->
+  <circle cx="660" cy="440" r="28" fill="#1a2a38" opacity="0.9"/>
+  <circle cx="660" cy="440" r="20" fill="#243040" opacity="0.8"/>
+  <circle cx="660" cy="440" r="10" fill="#1a2a38" opacity="0.9"/>
+  <line x1="660" y1="420" x2="660" y2="460" stroke="#b5a47a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="640" y1="440" x2="680" y2="440" stroke="#b5a47a" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Shadows / depth -->
+  <rect x="40" y="60" width="720" height="440" rx="6" fill="url(#bgGrad)" opacity="0.07"/>
+</svg>

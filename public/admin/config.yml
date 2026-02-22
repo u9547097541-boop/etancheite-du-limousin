@@ -1,0 +1,88 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded media files are stored
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Site URL (update after deployment)
+# site_url: https://your-site.netlify.app
+
+# Logo in admin panel
+# logo_url: /images/logo.png
+
+collections:
+  # ────────────────────────────────────────
+  # PAGES — Editable site pages
+  # ────────────────────────────────────────
+  - name: "pages"
+    label: "Pages du site"
+    files:
+      # Home page
+      - file: "content/home.json"
+        label: "Page d'accueil"
+        name: "home"
+        fields:
+          - { label: "Titre hero", name: "hero_title", widget: "string", default: "Spécialiste en étanchéité à Limoges" }
+          - { label: "Sous-titre hero", name: "hero_subtitle", widget: "text", default: "Étanchéité bitume & liquide, toiture végétalisée, bardage et isolation." }
+          - { label: "Bouton CTA", name: "cta_text", widget: "string", default: "Devis gratuit" }
+          - label: "Statistiques"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Valeur", name: "value", widget: "string" }
+              - { label: "Suffixe", name: "suffix", widget: "string", default: "" }
+              - { label: "Label", name: "label", widget: "string" }
+
+      # About / Qui sommes-nous
+      - file: "content/about.json"
+        label: "À propos"
+        name: "about"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Paragraphe 1", name: "paragraph_1", widget: "text" }
+          - { label: "Paragraphe 2", name: "paragraph_2", widget: "text" }
+          - label: "Points forts"
+            name: "highlights"
+            widget: "list"
+            field: { label: "Point", name: "point", widget: "string" }
+
+      # Contact info
+      - file: "content/contact.json"
+        label: "Informations de contact"
+        name: "contact"
+        fields:
+          - { label: "Adresse", name: "address", widget: "string", default: "6 allée des Gravelles" }
+          - { label: "Code postal & Ville", name: "city", widget: "string", default: "87000 Limoges" }
+          - { label: "Téléphone", name: "phone", widget: "string", default: "05 55 39 72 99" }
+          - { label: "Email", name: "email", widget: "string", default: "contact@etancheitedulimousin.com" }
+          - { label: "SIREN", name: "siren", widget: "string", default: "418 415 774" }
+
+  # ────────────────────────────────────────
+  # RÉALISATIONS — Portfolio projects
+  # ────────────────────────────────────────
+  - name: "realisations"
+    label: "Réalisations"
+    folder: "content/realisations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Sous-titre", name: "subtitle", widget: "string" }
+      - { label: "Type de travaux", name: "type", widget: "select", options: ["Étanchéité bitume", "Étanchéité liquide", "Toiture végétalisée", "Bardage", "Membrane bitume"] }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Description", name: "body", widget: "markdown", required: false }
+
+  # ────────────────────────────────────────
+  # PARTENAIRES — Partner logos
+  # ────────────────────────────────────────
+  - name: "partenaires"
+    label: "Partenaires"
+    folder: "content/partenaires"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nom", name: "name", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Ordre d'affichage", name: "order", widget: "number", default: 0 }

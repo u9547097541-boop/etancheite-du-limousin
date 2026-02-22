@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#ece8e0"/>
+    </linearGradient>
+    <linearGradient id="memb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d3e50"/>
+      <stop offset="100%" stop-color="#1a2a38"/>
+    </linearGradient>
+    <linearGradient id="torch" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b5a47a"/>
+      <stop offset="100%" stop-color="#d4c9a8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="540" fill="url(#bg)"/>
+
+  <!-- Roof surface — perspective top view -->
+  <rect x="60" y="80" width="680" height="380" rx="4" fill="url(#memb)" opacity="0.92"/>
+
+  <!-- Membrane seam lines — horizontal -->
+  <line x1="60" y1="190" x2="740" y2="190" stroke="#b5a47a" stroke-width="2" opacity="0.35"/>
+  <line x1="60" y1="300" x2="740" y2="300" stroke="#b5a47a" stroke-width="2" opacity="0.35"/>
+  <line x1="60" y1="410" x2="740" y2="410" stroke="#b5a47a" stroke-width="2" opacity="0.35"/>
+
+  <!-- Membrane — individual strips -->
+  <rect x="65" y="85" width="670" height="100" fill="#243548" opacity="0.5"/>
+  <rect x="65" y="195" width="670" height="100" fill="#1e2e3e" opacity="0.5"/>
+  <rect x="65" y="305" width="670" height="100" fill="#243548" opacity="0.5"/>
+
+  <!-- Overlap shadow on seams -->
+  <rect x="65" y="187" width="670" height="6" fill="#1a2a38" opacity="0.6"/>
+  <rect x="65" y="297" width="670" height="6" fill="#1a2a38" opacity="0.6"/>
+  <rect x="65" y="407" width="670" height="6" fill="#1a2a38" opacity="0.6"/>
+
+  <!-- Drain/evacuation -->
+  <circle cx="400" cy="460" r="30" fill="#1a2a38" opacity="0.9"/>
+  <circle cx="400" cy="460" r="22" fill="#243548"/>
+  <circle cx="400" cy="460" r="14" fill="#1a2a38"/>
+  <circle cx="400" cy="460" r="6" fill="#b5a47a" opacity="0.5"/>
+  <!-- Drain grates -->
+  <line x1="400" y1="438" x2="400" y2="482" stroke="#b5a47a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="378" y1="460" x2="422" y2="460" stroke="#b5a47a" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Torch/chalumeau tool -->
+  <g transform="translate(520, 160) rotate(-35)">
+    <!-- Handle -->
+    <rect x="0" y="30" width="16" height="80" rx="5" fill="url(#torch)"/>
+    <!-- Nozzle -->
+    <rect x="4" y="10" width="8" height="24" rx="3" fill="#8a7a5a"/>
+    <!-- Flame -->
+    <ellipse cx="8" cy="4" rx="7" ry="12" fill="#f97316" opacity="0.85" filter="url(#glow)"/>
+    <ellipse cx="8" cy="6" rx="4" ry="8" fill="#fbbf24" opacity="0.9"/>
+    <ellipse cx="8" cy="8" rx="2" ry="5" fill="#fff7ed" opacity="0.7"/>
+    <!-- Gas hose -->
+    <path d="M 8 110 Q 40 130 80 110 Q 100 100 120 120" stroke="#b5a47a" stroke-width="4" fill="none" opacity="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Worker boots/legs -->
+  <g transform="translate(420, 340)">
+    <rect x="0" y="0" width="24" height="60" rx="4" fill="#2d3e50" opacity="0.8"/>
+    <rect x="30" y="0" width="24" height="60" rx="4" fill="#2d3e50" opacity="0.8"/>
+    <!-- Boots -->
+    <rect x="-4" y="52" width="32" height="16" rx="4" fill="#1a2a38" opacity="0.9"/>
+    <rect x="26" y="52" width="32" height="16" rx="4" fill="#1a2a38" opacity="0.9"/>
+  </g>
+
+  <!-- Rooftop parapet wall -->
+  <rect x="60" y="70" width="680" height="15" rx="2" fill="#b5a47a" opacity="0.7"/>
+  <rect x="60" y="70" width="680" height="5" rx="2" fill="#d4c9a8" opacity="0.5"/>
+  <rect x="60" y="450" width="680" height="15" rx="2" fill="#b5a47a" opacity="0.6"/>
+
+  <!-- Texture grain overlay -->
+  <rect x="60" y="80" width="680" height="380" fill="url(#bg)" opacity="0.04"/>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#ece8e0"/>
+    </linearGradient>
+    <linearGradient id="roofFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c0bdb8"/>
+      <stop offset="100%" stop-color="#a8a4a0"/>
+    </linearGradient>
+    <linearGradient id="resinPuddle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b5a47a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8a7a5a" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="worker" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d3e50"/>
+      <stop offset="100%" stop-color="#1a2a38"/>
+    </linearGradient>
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="540" fill="url(#bg)"/>
+
+  <!-- Roof surface — concrete -->
+  <rect x="0" y="300" width="800" height="240" fill="url(#roofFloor)" opacity="0.6"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#8a8480" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Concrete texture -->
+  <rect x="0" y="300" width="800" height="240" fill="#b8b4af" opacity="0.1"/>
+  <line x1="200" y1="300" x2="200" y2="540" stroke="#a0a0a0" stroke-width="0.5" opacity="0.2"/>
+  <line x1="400" y1="300" x2="400" y2="540" stroke="#a0a0a0" stroke-width="0.5" opacity="0.2"/>
+  <line x1="600" y1="300" x2="600" y2="540" stroke="#a0a0a0" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Resin / liquid membrane application zone -->
+  <ellipse cx="310" cy="350" rx="220" ry="50" fill="url(#resinPuddle)" filter="url(#softBlur)" opacity="0.8"/>
+  <!-- Ripple / spread direction lines -->
+  <ellipse cx="310" cy="350" rx="190" ry="42" fill="none" stroke="#d4c9a8" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="310" cy="350" rx="150" ry="34" fill="none" stroke="#d4c9a8" stroke-width="1" opacity="0.4"/>
+  <ellipse cx="310" cy="350" rx="100" ry="24" fill="none" stroke="#d4c9a8" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Spreading tool / rouleau -->
+  <g transform="translate(150, 290)">
+    <!-- Handle pole -->
+    <rect x="75" y="-120" width="8" height="130" rx="3" fill="#2d3e50" opacity="0.85"/>
+    <!-- Roller head -->
+    <rect x="55" y="10" width="48" height="18" rx="6" fill="#b5a47a" opacity="0.9"/>
+    <!-- Roller detail -->
+    <rect x="57" y="10" width="6" height="18" rx="2" fill="#8a7a5a" opacity="0.6"/>
+    <rect x="65" y="10" width="6" height="18" rx="2" fill="#8a7a5a" opacity="0.5"/>
+    <rect x="73" y="10" width="6" height="18" rx="2" fill="#8a7a5a" opacity="0.6"/>
+    <rect x="81" y="10" width="6" height="18" rx="2" fill="#8a7a5a" opacity="0.5"/>
+    <rect x="89" y="10" width="6" height="18" rx="2" fill="#8a7a5a" opacity="0.6"/>
+    <!-- Resin drip from roller -->
+    <ellipse cx="79" cy="28" rx="22" ry="5" fill="#b5a47a" opacity="0.6"/>
+  </g>
+
+  <!-- Worker — body silhouette -->
+  <g transform="translate(200, 160)">
+    <!-- Head + helmet -->
+    <circle cx="60" cy="0" r="22" fill="#2d3e50"/>
+    <rect x="38" y="-10" width="44" height="14" rx="5" fill="#b5a47a" opacity="0.9"/>
+    <rect x="32" y="2" width="56" height="6" rx="3" fill="#8a7a5a" opacity="0.8"/>
+    <!-- Visor -->
+    <rect x="42" y="8" width="36" height="10" rx="3" fill="#d4c9a8" opacity="0.5"/>
+
+    <!-- Torso -->
+    <rect x="36" y="24" width="48" height="60" rx="5" fill="url(#worker)" opacity="0.85"/>
+    <!-- Hi-vis vest lines -->
+    <rect x="40" y="36" width="40" height="4" rx="1" fill="#b5a47a" opacity="0.6"/>
+    <rect x="40" y="58" width="40" height="4" rx="1" fill="#b5a47a" opacity="0.6"/>
+
+    <!-- Left arm — extended holding pole -->
+    <rect x="-18" y="28" width="58" height="16" rx="6" fill="#2d3e50" opacity="0.8"/>
+    <!-- Right arm -->
+    <rect x="80" y="30" width="36" height="14" rx="6" fill="#2d3e50" opacity="0.8"/>
+
+    <!-- Legs -->
+    <rect x="38" y="84" width="22" height="58" rx="5" fill="#1a2a38" opacity="0.85"/>
+    <rect x="64" y="84" width="22" height="58" rx="5" fill="#1a2a38" opacity="0.85"/>
+    <!-- Boots -->
+    <rect x="32" y="136" width="32" height="16" rx="4" fill="#0f1a24" opacity="0.9"/>
+    <rect x="60" y="136" width="32" height="16" rx="4" fill="#0f1a24" opacity="0.9"/>
+  </g>
+
+  <!-- Bucket of resin -->
+  <g transform="translate(450, 340)">
+    <rect x="0" y="0" width="50" height="55" rx="4" fill="#2d3e50" opacity="0.85"/>
+    <rect x="4" y="0" width="42" height="12" rx="3" fill="#b5a47a" opacity="0.8"/>
+    <!-- Resin surface -->
+    <ellipse cx="25" cy="12" rx="21" ry="6" fill="#c9b888" opacity="0.9"/>
+    <!-- Handle -->
+    <path d="M 8 0 Q 25 -20 42 0" stroke="#8a7a5a" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Background building edge -->
+  <rect x="600" y="80" width="200" height="260" fill="#2d3e50" opacity="0.15"/>
+  <rect x="0" y="140" width="140" height="200" fill="#2d3e50" opacity="0.1"/>
+</svg>
